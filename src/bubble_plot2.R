@@ -52,6 +52,9 @@ recs <- unique(recs, by = c("glatos_array2", "deploy_date_time_condensed", "reco
 recs[, start := deploy_date_time_condensed]
 recs[, end := recover_date_time_condensed]
 
+# create time vector
+t_seq <- seq(from = as.POSIXct("2018-11-01 00:00:00", tz = "UTC"), to = as.POSIXct("2019-10-01 00:00:00", tz = "UTC"), by = "1 month")
+
 # create start and end columns for bins
 foo <- data.table(start = t_seq, end = t_seq)
 setkey(foo, start, end)
@@ -71,9 +74,6 @@ dtc <- dtc[.(1), on = "passed_filter"]
 
 # create glatos_array2
 dtc[, glatos_array2 := glatos_array][glatos_array == "OUT", glatos_array2 := paste(glatos_array, station_no, sep = "-")]
-
-# create time vector
-t_seq <- seq(from = as.POSIXct("2018-11-01 00:00:00", tz = "UTC"), to = as.POSIXct("2019-10-01 00:00:00", tz = "UTC"), by = "1 month")
 
 # bin detections by time bins
 dtc[, t_bin := t_seq[findInterval(detection_timestamp_utc, t_seq)]]

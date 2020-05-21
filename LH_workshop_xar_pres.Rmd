@@ -215,7 +215,7 @@ class: top, center
 - Hatchery culture and stocking 
     - US Fish and Wildlife Service
 	- National Fish Hatchery System
-- Les Cheneaux Islands - source of gametes for hatchery
+- Les Cheneaux Islands - source population
 ]
 
 .pull-left[
@@ -338,7 +338,7 @@ class: top, center
 # Methods
 
 .left[
-- Tagged 25 cisco from Government Bay (November 2018; ~ 400 mm TL)
+- Tagged 25 cisco from Government Bay (November 2018; ~ 400 mm TL; 23M, 2F)
 - Deployed 28 receivers in Les Cheneaux Islands, Lake Huron
 - Tracked movements ~ 1 year
 ]
