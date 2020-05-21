@@ -428,7 +428,7 @@ class: top, center
 background-image: url("images/overall.png")
 background-size: cover
 
-# Acoustic detections November 2018 - September 2019
+# November 2018 - September 2019
 
 ---
 
@@ -438,7 +438,6 @@ class: top, center
 
 .left[
 - Offshore movements in summer and fall
-  - Recreational fishery in Les Cheneaux Islands
   - obtain prey resources
   - water temperature
 - Survival 
@@ -451,9 +450,10 @@ class: top, center
 # Take home messages
 
 .left[
-1. .red[ Preliminary acoustic telemetry data suggest cisco move offshore. Stocked cisco adapt to Saginaw Bay?]
-2. .red[Cisco can be tagged sucessfully]
-3. .red[Winter potential opportunity to capture cisco in Les Cheneaux Islands?]
+1. .red[ Preliminary acoustic telemetry data suggest cisco move
+   offshore during summer]
+2. .red[Cisco can be tagged]
+3. .red[Winter potential opportunity to tag cisco in Les Cheneaux Islands]
 ]
 
 ---
