@@ -115,46 +115,6 @@ class: top, center
 ---
 class: top, center
 
-# Cisco in Lake Huron?
-.left[
-- Contemporary distribution limited to northern Lake Huron
-- Recreational fishery in Les Cheneaux Islands
-- "Coastal" population
-]
-
-.pull-left[
-
-```{r echo = FALSE, fig.height=6, fig.width=7}
-
-library(leaflet)
-zoom <- 6.5
-m <- leaflet(options = leafletOptions(zoomControl = FALSE, minZoom = zoom, maxZoom = zoom, dragging = FALSE))
-m <- setView(m, lng = -82.8, lat = 44.5, zoom = zoom)
-m <- addProviderTiles(m, providers$Esri.WorldShadedRelief)
-m <- addRectangles(m, lng1=-84.588855, lat1=46.046458, lng2=-84.2, lat2=45.862240, fillColor = "transparent", color = "red", opacity = 1)
-m
-
-```
-]
-
-.pull-right[
-
-```{r echo = FALSE, fig.height=6, fig.width=7}
-
-zoom <- 11
-m <- leaflet(options = leafletOptions(zoomControl = FALSE, minZoom = zoom, maxZoom = zoom, dragging = FALSE))
-
-m <- setView(m, lng = -84.35, lat = 45.947755, zoom = zoom)
-m <- addProviderTiles(m, providers$Esri.WorldImagery, group = "satellite")
-#fm <- addRectangles(m, lng1=-84.588855, lat1=46.046458, lng2=-84.2, lat2=45.862240, fillColor = "transparent", color = "red", opacity = 1)
-m
-
-```
-]
-
----
-class: top, center
-
 # Why have cisco populations declined?
 
 .left[
@@ -205,6 +165,47 @@ class: top, center
 	<img src="images/alewife.jpg" width="25%" height="25%">
 </div>
 	
+---
+
+class: top, center
+
+# Cisco in Lake Huron?
+.left[
+- Contemporary distribution limited to northern Lake Huron
+- Recreational fishery in Les Cheneaux Islands
+- "Coastal" population
+]
+
+.pull-left[
+
+```{r echo = FALSE, fig.height=6, fig.width=7}
+
+library(leaflet)
+zoom <- 6.5
+m <- leaflet(options = leafletOptions(zoomControl = FALSE, minZoom = zoom, maxZoom = zoom, dragging = FALSE))
+m <- setView(m, lng = -82.8, lat = 44.5, zoom = zoom)
+m <- addProviderTiles(m, providers$Esri.WorldShadedRelief)
+m <- addRectangles(m, lng1=-84.588855, lat1=46.046458, lng2=-84.2, lat2=45.862240, fillColor = "transparent", color = "red", opacity = 1)
+m
+
+```
+]
+
+.pull-right[
+
+```{r echo = FALSE, fig.height=6, fig.width=7}
+
+zoom <- 11
+m <- leaflet(options = leafletOptions(zoomControl = FALSE, minZoom = zoom, maxZoom = zoom, dragging = FALSE))
+
+m <- setView(m, lng = -84.35, lat = 45.947755, zoom = zoom)
+m <- addProviderTiles(m, providers$Esri.WorldImagery, group = "satellite")
+#fm <- addRectangles(m, lng1=-84.588855, lat1=46.046458, lng2=-84.2, lat2=45.862240, fillColor = "transparent", color = "red", opacity = 1)
+m
+
+```
+]
+
 ---
 
 class: top, center
