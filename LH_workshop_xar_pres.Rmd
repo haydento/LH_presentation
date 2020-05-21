@@ -419,7 +419,7 @@ class: top, center
 background-image: url("images/monthly_dtc.gif")
 background-size: cover
 
-# Acoustic detections- month
+# Acoustic detections
 
 ---
 
@@ -450,8 +450,7 @@ class: top, center
 # Take home messages
 
 .left[
-1. .red[ Preliminary acoustic telemetry data suggest cisco move
-   offshore during summer]
+1. .red[ Preliminary acoustic telemetry data suggest cisco move offshore during summer]
 2. .red[Cisco can be tagged]
 3. .red[Winter potential opportunity to tag cisco in Les Cheneaux Islands]
 ]
